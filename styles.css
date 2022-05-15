@@ -1,0 +1,132 @@
+.nps__thanks {
+	margin-top: 80px;
+	text-align: center;
+}
+
+.nps__form {
+	margin-top: 40px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.nps__form {
+		margin-top: 80px;
+	}
+}
+
+.nps__header {
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.nps__header {
+		font-size: 1.75rem;
+	}
+}
+
+.nps__subheader {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+	.nps__subheader {
+		font-size: 1.125rem;
+	}
+}
+
+.nps__button {
+	margin-top: 40px;
+}
+
+.nps__star-wrapper {
+	display: none;
+}
+
+.nps__questions-wrapper {
+	margin-top: 40px;
+}
+
+.nps__question {
+	padding: 16px 0;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+	.nps__question {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 48px;
+		font-weight: 400;
+	}
+	
+	.nps__question:not(:last-child) {
+		border-bottom: 1px solid #e6e6e6;
+	}
+}
+
+.nps__question-rating {
+	margin-top: 16px;
+	flex-basis: 25%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nps__question-rating--single-answer {
+	justify-content: center;
+}
+
+.nps__question-rating--shake {
+	animation: shake 0.5s;
+	animation-iteration-count: 2;
+}
+
+.nps__label:not(:first-of-type) {
+	padding-right: 14px;
+}
+
+.nps__question-rating--single-answer .nps__label:not(:first-of-type) {
+	padding-right: 20px;
+}
+
+.nps__label:not(:last-of-type) {
+	padding-left: 14px;
+}
+
+.nps__question-rating--single-answer .nps__label:not(:last-of-type) {
+	padding-left: 20px;
+}
+
+.nps__label input[type=radio] {
+	display: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.nps__label:hover polygon, .nps__question-rating:not(.nps__question-rating--single-answer) .nps__label:hover ~ .nps__label polygon {
+	fill: #dc0069;
+}
+
+.nps__question-rating:not(.nps__question-rating--hover) .nps__label--selected polygon, 
+.nps__question-rating:not(.nps__question-rating--hover):not(.nps__question-rating--single-answer) .nps__label--selected ~ .nps__label polygon {
+	fill: #dc0069;
+}
+
+.nps__star {
+	height: 24px;
+}
+
+.nps__hint {
+	flex-basis: 100%;
+	margin-top: 4px;
+	font-size: 12px;
+    font-weight: 300;
+    color: #808080;
+    text-transform: uppercase;
+}
